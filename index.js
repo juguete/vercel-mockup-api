@@ -14,6 +14,10 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+app.get('/now', (req, res) => {
+  res.json({now : new Date().toString})
+})
+
 app.get('/getapikey', (req, res) => {
   res.status(200).json({});
 });
