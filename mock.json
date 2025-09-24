@@ -1,0 +1,825 @@
+{
+	"info": {
+		"_postman_id": "53c3f04d-0ab2-4cc0-8a9c-d2a8dccc9fca",
+		"name": "Scenario_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31798838",
+		"_collection_link": "https://cyberwise-0650.postman.co/workspace/cyberwise-Workspace~51bfd48b-d6b0-490b-8526-439ff5227654/collection/31798838-53c3f04d-0ab2-4cc0-8a9c-d2a8dccc9fca?action=share&source=collection_link&creator=31798838"
+	},
+	"item": [
+		{
+			"name": "getapikey",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/getapikey",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getapikey"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/getapikey",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"getapikey"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/empty-container/pickup",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/empty-container/pickup",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"empty-container",
+						"pickup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/empty-container/pickup",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/empty-container/pickup",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"empty-container",
+								"pickup"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"booking_no\": \"BK20240501\",\n    \"status\": \"READY\",\n    \"is_returned\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "/full-container/return",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/full-container",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"full-container"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/full-container/return",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io//full-container/return",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"",
+								"full-container",
+								"return"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"booking_no\": \"BK20240501\",\n    \"status\": \"READY\",\n    \"is_returned\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "/full-container/import",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/full-container/import",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"full-container",
+						"import"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/full-container/import",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/full-container/import",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"full-container",
+								"import"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"status\": \"READY\"\n}\n"
+				}
+			]
+		},
+		{
+			"name": "/bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/bookings",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"bookings"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/bookings",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/bookings",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"bookings"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n  \"booking_list\": {\n    \"lst\": [\"BK20240501\", \"BK20240502\"]\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "/vessel-voyages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyages",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"vessel-voyages"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/vessel-voyages",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyages",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"vessel-voyages"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"vessel_voyage_lst\" : [\"bk1234\",\"bk4444\",\"bk7777\"]\n}"
+				}
+			]
+		},
+		{
+			"name": "/vessel-voyage-comparisons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyage-comparisons",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"vessel-voyage-comparisons"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/vessel-voyage-comparisons",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyage-comparisons",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"vessel-voyage-comparisons"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "/vessel-voyages/validation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Change_Vessel_Voyage_Code\": \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyages/validation",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"vessel-voyages",
+						"validation"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/vessel-code-validations",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-code-validations",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"vessel-code-validations"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"voyage_code\": \"1234\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/vessel-voyages?voyage_code=",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyages?voyage_code=",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"vessel-voyages"
+					],
+					"query": [
+						{
+							"key": "voyage_code",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/vessel-voyages?voyage_code=",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyages?voyage_code=",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"vessel-voyages"
+							],
+							"query": [
+								{
+									"key": "voyage_code",
+									"value": ""
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"check\": \"dummy\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/vessel-voyage/dict",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyage/dict",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"vessel-voyage",
+						"dict"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/vessel-voyage/dict",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyage/dict",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"vessel-voyage",
+								"dict"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"check\": \"dummy\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/vessel-voyage/change",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyage/change",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"vessel-voyage",
+						"change"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/vessel-voyage/change",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/vessel-voyage/change",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"vessel-voyage",
+								"change"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n    \"check\": \"dummy\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/trx/job-orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/trx/job-orders",
+					"protocol": "https",
+					"host": [
+						"92788fdf-fb95-43cd-988e-cac3dc672997",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"trx",
+						"job-orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/trx/job-orders",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://92788fdf-fb95-43cd-988e-cac3dc672997.mock.pstmn.io/trx/job-orders",
+							"protocol": "https",
+							"host": [
+								"92788fdf-fb95-43cd-988e-cac3dc672997",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"trx",
+								"job-orders"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n\"check\": \"dummy\"\n}"
+				}
+			]
+		},
+		{
+			"name": "/trx/job-orders",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "/trx/job-orders",
+					"originalRequest": {
+						"method": "POST",
+						"header": []
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "{\n\"check\": \"dummy\"\n}"
+				}
+			]
+		}
+	]
+}

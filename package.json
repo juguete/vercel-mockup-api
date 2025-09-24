@@ -1,0 +1,17 @@
+{
+  "name": "vercel-mockup-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev --host 0.0.0.0",
+    "build": "vercel build",
+    "deploy": "vercel build && vercel --prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
