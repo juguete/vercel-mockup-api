@@ -84,4 +84,8 @@ app.post('/trx/job-orders', (req, res) => {
   res.json({ check: 'dummy' });
 });
 
+app.get('/vessel-voyage/change', (req, res) => {
+  res.json({ check: 'dummy' });
+});
+
 module.exports = app;
