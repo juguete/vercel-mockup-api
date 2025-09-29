@@ -25,16 +25,16 @@ app.get('/getapikey', (req, res) => {
 app.get('/empty-container/pickup', (req, res) => {
   res.json({
     booking_no: 'BK20240501',
-    status: 'READY',
-    is_returned: true
+    empty_status: 'READY',
+    empty_boolean: true
   });
 });
 
 app.get('/full-container/return', (req, res) => {
   res.json({
     booking_no: 'BK20240501',
-    status: 'READY',
-    is_returned: true
+    return_status: 'READY',
+    return_boolean: true
   });
 });
 
