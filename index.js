@@ -57,7 +57,7 @@ app.get('/vessel-voyages', (req, res) => {
 });
 
 app.get('/vessel-voyage-comparisons', (req, res) => {
-  res.status(200).json({});
+  res.json({ voyage_status: '200' });
 });
 
 app.get('/vessel-voyages/validation', (req, res) => {
