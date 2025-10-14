@@ -70,10 +70,6 @@ app.get('/vessel-voyages/validation', (req, res) => {
   });
 });
 
-app.put('/vessel-voyages', (req, res) => {
-  res.json({ check: 'dummy' });
-});
-
 app.get('/vessel-voyage/dict', (req, res) => {
   res.json({ vessel_voyage_code_dict: 'PUS10004' });
 });
