@@ -46,10 +46,9 @@ app.get('/full-container/import', (req, res) => {
 
 app.get('/bookings', (req, res) => {
   res.json({
-    booking_list: {
-      lst: ['BK20240501', 'BK20240502']
+    booking_list: ['BK20240501', 'BK20240502']
     }
-  });
+  );
 });
 
 app.get('/vessel-voyages', (req, res) => {
