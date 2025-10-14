@@ -64,10 +64,11 @@ app.get('/vessel-voyage-comparisons', (req, res) => {
 
 app.get('/vessel-voyages/validation', (req, res) => {
   res.json({
-    change_booking_no: 'bk1234',
-    return_status: 'READY',
+    booking_no: 'BK20240501',
+    vessel_voyage_code: 'bk1234',
+    vessel_voyage_status: 'READY',
     change_vessel_yard : 'maxico',
-    return_boolean: true
+    change_return_boolean: true
   });
 });
 
@@ -76,7 +77,7 @@ app.put('/vessel-voyages', (req, res) => {
 });
 
 app.get('/vessel-voyage/dict', (req, res) => {
-  res.json({ check: 'dummy' });
+  res.json({ vessel_voyage_code_dict: 'PUS10004' });
 });
 
 app.post('/vessel-voyage/change', (req, res) => {
