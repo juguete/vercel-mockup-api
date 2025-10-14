@@ -74,6 +74,13 @@ app.get('/vessel-voyage/dict', (req, res) => {
   res.json({ vessel_voyage_code_dict: 'PUS10004' });
 });
 
+app.get('/customer_request', (req, res) => {
+  res.json({
+    vessel_voyage_lst: ['111', '222', 'customer request']
+  });
+});
+
+
 app.post('/vessel-voyage/change', (req, res) => {
   res.json({ check: 'dummy' });
 });
