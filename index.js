@@ -46,7 +46,7 @@ app.get('/full-container/import', (req, res) => {
 
 app.get('/bookings', (req, res) => {
   res.json({
-    booking_list: ['BK20240501', 'BK20240502']
+    booking_list: ['AL0000183850', 'AL0000183851','AL0000183852','AL0000183853']
   });
 });
 
@@ -275,7 +275,7 @@ app.get('/test_json',(req, res) => {
         "errorMessageProcessed": false
     }
 }
-  res.json({ data });
+  res.json(data);
 });
 
 module.exports = app;
