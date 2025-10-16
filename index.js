@@ -24,7 +24,7 @@ app.get('/getapikey', (req, res) => {
 
 app.get('/empty-container/pickup', (req, res) => {
   res.json({
-    booking_no: 'BK20240501',
+    booking_no: 'AL0000182021',
     empty_status: 'READY',
     empty_vessel_yard : 'maxico',
     empty_boolean: true
@@ -33,7 +33,7 @@ app.get('/empty-container/pickup', (req, res) => {
 
 app.get('/full-container/return', (req, res) => {
   res.json({
-    booking_no: 'BK20240501',
+    booking_no: 'AL0000182021',
     return_status: 'READY',
     return_vessel_yard : 'maxico',
     return_boolean: true
@@ -46,7 +46,7 @@ app.get('/full-container/import', (req, res) => {
 
 app.get('/bookings', (req, res) => {
   res.json({
-    booking_list: ['AL0000183850', 'AL0000183851','AL0000183852','AL0000183853']
+    booking_list: ['AL0000182021','AL0000183850', 'AL0000183851','AL0000183852','AL0000183853']
   });
 });
 
@@ -63,7 +63,7 @@ app.get('/vessel-voyage-comparisons', (req, res) => {
 
 app.get('/vessel-voyages/validation', (req, res) => {
   res.json({
-    booking_no: 'BK20240501',
+    booking_no: 'AL0000182021',
     vessel_voyage_code: 'bk1234',
     vessel_voyage_status: 'READY',
     change_vessel_yard : 'maxico',
