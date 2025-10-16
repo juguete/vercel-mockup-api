@@ -50,7 +50,8 @@ app.get('/bookings', (req, res) => {
   });
 });
 
-app.get('/vessel-voyages', (req, res) => {
+app.get('/vessel-voyages', (req, res) => 
+  {
   res.json({
     vessel_voyage_lst: ['bk1234', 'bk4444', 'bk7777']
   });
@@ -95,6 +96,22 @@ app.post('/trx/job-orders', (req, res) => {
 app.get('/vessel-voyage/change', (req, res) => {
   res.json({ check: 'dummy' });
 });
+
+const vvdMap = {
+  CHINA0123E: "HJCN0123E",
+  CHINA0123W: "HJCN0123W"
+};
+
+app.post("/vvd_search", (req, res) => {
+  const { vvd } = req.body;
+
+  const result = vvdMap[vvd] ?? null;
+
+  res.json({
+    vvd_no: result
+  });
+});
+
 
 app.get('/test_json',(req, res) => {
   var data = {
