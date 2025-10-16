@@ -50,6 +50,14 @@ app.get('/bookings', (req, res) => {
   });
 });
 
+app.get('/vvd_codes', (req, res) => {
+  res.json({
+    vvd_codes: ['CHINA0123E','CHINA0123W', 'CHINA0123N','CHINA0123S']
+  });
+});
+
+
+
 app.get('/vessel-voyages', (req, res) => 
   {
   res.json({
@@ -294,5 +302,7 @@ app.get('/test_json',(req, res) => {
 }
   res.json(data);
 });
+
+
 
 module.exports = app;
