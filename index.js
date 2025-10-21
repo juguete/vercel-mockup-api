@@ -34,4 +34,15 @@ vessel_voyage_lst: ['111', '222', 'customer request']
 });
 
 
+app.get('/bookings', (req, res) => {
+
+res.json({
+
+booking_list: ['AL0000182021','AL0000183850', 'AL0000183851','AL0000183852','AL0000183853']
+
+});
+
+});
+
+
 module.exports = app;
