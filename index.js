@@ -23,6 +23,15 @@ app.get('/getapikey', (req, res) => {
 });
 
 
+app.get('/customer_request', (req, res) => {
+
+res.json({
+
+vessel_voyage_lst: ['111', '222', 'customer request']
+
+});
+
+});
 
 
 module.exports = app;
