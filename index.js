@@ -37,7 +37,7 @@ app.get('/container_no', (req, res) => {
 
 res.json({
 
-booking_list: ['KBCU0052290','KBCU0052291', 'KBCU0052292']
+container_list: ['KBCU0052290']
 
 });
 
