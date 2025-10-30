@@ -33,6 +33,16 @@ vessel_voyage_lst: ['111', '222', 'customer request']
 
 });
 
+app.get('/container_no', (req, res) => {
+
+res.json({
+
+booking_list: ['KBCU0052290','KBCU0052291', 'KBCU0052292']
+
+});
+
+});
+
 
 app.get('/bookings', (req, res) => {
 
