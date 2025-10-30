@@ -44,6 +44,18 @@ container_list: ['KBCU0052290']
 });
 
 
+app.get('/movement_status', (req, res) => {
+
+res.json({
+
+movement_status : 'VL'
+
+});
+
+});
+
+
+
 app.get('/bookings', (req, res) => {
 
 res.json({
